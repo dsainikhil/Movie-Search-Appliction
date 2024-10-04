@@ -104,9 +104,6 @@ main{
     overflow-y: auto;
 }
 
-/* .overview::-webkit-scrollbar {
-    display: none; /* For Chrome, Safari, and Opera */
-} */
 
 .movie:hover .overview{
     transform: translateY(0);
