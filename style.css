@@ -98,10 +98,15 @@ main{
     bottom:0;
     background-color: white;
     padding: 1rem;
-    max-height: 100%;
+    max-height: 300px;
     transform: translateY(101%);
     transition:transform 0.3s ease-in;
+    overflow-y: auto;
 }
+
+/* .overview::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+} */
 
 .movie:hover .overview{
     transform: translateY(0);
