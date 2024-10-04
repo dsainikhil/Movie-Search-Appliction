@@ -45,18 +45,19 @@ header{
 }
 
 .home-button {
-    background-color: var(--secondary-color); /* Use your secondary color */
+    background-color: var(--secondary-color); 
     color: white;
     border: none;
     font-size: 20px;
     border-radius: 15px;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    margin-left: 1rem; /* Space between search input and button */
+    margin-left: 1rem; 
 }
 
 .home-button:hover {
-    background-color: #555; /* Change this color for hover effect */
+    background-color: #fff; 
+    color: var(--primary-color);
 }
 
 main{

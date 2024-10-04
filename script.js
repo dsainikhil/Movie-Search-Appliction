@@ -16,7 +16,7 @@ async function getMovies(url) {
 
 //display movies on the webpage
 function showMovies(movies) {
-    main.innerHTML = ''; // Clear previous content
+    main.innerHTML = ''; 
     movies.forEach(movie => {
         const { title, vote_average, overview, poster_path } = movie;
         const movieDiv = document.createElement('div');
@@ -58,7 +58,7 @@ form.addEventListener('submit', (e) => {
     if (searchTerm) {
         searchMovies(searchTerm);
     } else {
-        getMovies(API_URL); // If no search term, get popular movies
+        getMovies(API_URL); 
     }
 });
 
@@ -72,6 +72,7 @@ async function searchMovies(query) {
 document.getElementById('homeButton').addEventListener('click', () => {
     window.location.href = 'index.html'; 
 });
+
 // Initial fetch of popular movies
 getMovies(API_URL);
 
