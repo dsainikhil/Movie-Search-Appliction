@@ -22,11 +22,13 @@ function showMovies(movies) {
         const movieDiv = document.createElement('div');
         movieDiv.classList.add('movie');
         
+        const rating = vote_average.toFixed(1);
+
         movieDiv.innerHTML = `
             <img src="${IMG_URL + poster_path}" alt="${title}" />
             <div class="movie-info">
                 <h3>${title}</h3>
-                <span class="${getRatingClass(vote_average)}">${vote_average}</span>
+                <span class="${getRatingClass(rating)}">${rating}</span>
             </div>
             <div class="overview">
                 <h3>Overview</h3>
@@ -67,6 +69,9 @@ async function searchMovies(query) {
     showMovies(data.results);
 }
 
+document.getElementById('homeButton').addEventListener('click', () => {
+    window.location.href = 'index.html'; 
+});
 // Initial fetch of popular movies
 getMovies(API_URL);
 

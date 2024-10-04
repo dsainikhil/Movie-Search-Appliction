@@ -17,7 +17,7 @@ body{
 header{
     padding: 1rem;
     display: flex;
-    justify-content: end;
+    justify-content:space-between;
     background-color: var(--secondary-color);
     position: sticky;
     top:0;
@@ -42,6 +42,21 @@ header{
 
 .search::placeholder{
     color: #7378c5;
+}
+
+.home-button {
+    background-color: var(--secondary-color); /* Use your secondary color */
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-left: 1rem; /* Space between search input and button */
+}
+
+.home-button:hover {
+    background-color: #555; /* Change this color for hover effect */
 }
 
 main{
